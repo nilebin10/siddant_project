@@ -1,0 +1,25 @@
+#fund-performance-container {
+  padding: 1rem;
+  .fund-performance-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+  }
+
+  .fund-performance-main {
+    display: flex;
+    justify-content: space-between;
+    .fund-performance-chart,
+    .fund-performance-year-dropdown {
+      min-height: 200px;
+      border: 1px solid;
+    }
+    .fund-performance-chart {
+      flex: 1;
+    }
+    .fund-performance-year-dropdown {
+      flex: 0.4;
+    }
+  }
+}

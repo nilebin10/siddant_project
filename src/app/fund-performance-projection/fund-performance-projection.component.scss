@@ -1,0 +1,17 @@
+#fund-performance-container {
+  display: flex;
+  border: 1px solid;
+  padding: 1rem;
+  justify-content: space-between;
+  app-fund-performance-trend,
+  app-future-projection {
+    border: 1px solid;
+  }
+
+  app-fund-performance-trend {
+    flex: 0.825;
+  }
+  app-future-projection {
+    flex: 0.4;
+  }
+}

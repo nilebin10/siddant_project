@@ -1,0 +1,132 @@
+<div class="all-time-container">
+  <div class="all-time-left-card">
+    <app-all-time-card>
+      <span>Investment Allocation</span>
+      <div class="pie-chart">
+        <div>
+          <canvas #chart width="250" height="250">{{ myChart }}</canvas>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="bottom-section-header">
+          <span>Total Investment</span>
+          <span>$61.13</span>
+        </div>
+        <div class="bottom-section-main">
+          <div class="bottom-section-main-content">
+            <div class="item-row">
+              <span>Avaialble Funds</span>
+              <span>8%</span>
+              <span>$7422.1</span>
+            </div>
+            <div class="item-row">
+              <span>Mutual Funds</span>
+              <span>15%</span>
+              <span>$4500.1</span>
+            </div>
+            <div class="item-row">
+              <span>Equity Funds</span>
+              <span>8%</span>
+              <span>$3488.1</span>
+            </div>
+            <div class="item-row">
+              <span>Tax Saver</span>
+              <span>23%</span>
+              <span>$15788.1</span>
+            </div>
+            <div class="item-row"></div>
+          </div>
+        </div>
+        <!-- <div *ngFor="let item of assetAllocation" class="bottom-section-main">
+            <span>{{ item.name }}</span>
+            <span>{{ item.percent }}</span>
+            <span>{{ item.price }}</span>
+          </div> -->
+        <div class="bottom-section-footer">
+          Footer
+        </div>
+      </div>
+    </app-all-time-card>
+  </div>
+
+  <div class="all-time-center-card">
+    <app-all-time-card>
+      <span>Life cover investment</span>
+      <div class="pie-chart">
+        <div class="life-cover-investment">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart green">
+              <path
+                class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                class="circle"
+                stroke-dasharray="60, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <!-- <foreignObject width="200" height="200">
+                <p>Child education Investment</p>
+              </foreignObject> -->
+
+              <text x="18" y="20.35" class="percentage">
+                Child education Investment
+              </text>
+            </svg>
+          </div>
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart green">
+              <path
+                class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                class="circle"
+                stroke-dasharray="60, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="percentage">
+                Retirement fund
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </app-all-time-card>
+  </div>
+
+  <div class="all-time-right-card">
+    <app-all-time-card>
+      <span>Upcoming Bills</span>
+      <div class="pie-chart">
+        <div class="upcoming-text-container">
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+      </div>
+      <div class="pie-chart">
+        <div class="image-container">
+          <p>
+            <img
+              src="../../../../assets/group-photo.png"
+              alt=""
+              width="200"
+              height="200"
+            />
+          </p>
+          <div>
+            know more about investment plans for your child
+          </div>
+        </div>
+      </div>
+    </app-all-time-card>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.row {
+  margin-right: 5rem;
+  height: 10rem;
+  .item-container {
+    flex: 1;
+    height: 100%;
+  }
+  .userDetails {
+    // flex: 0.5;
+    flex-basis: 20rem;
+    height: 100%;
+  }
+}
+.border {
+  border: 1px solid;
+}

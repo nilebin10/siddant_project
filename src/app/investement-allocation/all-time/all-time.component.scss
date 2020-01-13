@@ -1,0 +1,92 @@
+.all-time-container {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  // Code to be removed after inserting chart
+  .pie-chart {
+    // min-height: 200px;
+    > div {
+      border: 1px solid;
+      padding: 1rem;
+    }
+    // .image-container {
+    //   background: url("../../../../assets/know_1.jpg");
+    // }
+  }
+
+  .all-time-left-card {
+    border: 1px solid;
+    .bottom-section {
+      padding: 1rem;
+      background-color: pink;
+      .bottom-section-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+        padding: 1rem 0;
+      }
+    }
+    .bottom-section-main-content {
+      border: 1px solid;
+      padding: 1rem 0;
+      .item-row {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .all-time-center-card {
+    border: 1px solid;
+    .life-cover-investment {
+      //height: 150px;
+      width: auto;
+      // border-radius: 50%;
+      // border-width: 10px;
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 3.8;
+    }
+
+    .circle {
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+    }
+
+    @keyframes progress {
+      0% {
+        stroke-dasharray: 0 100;
+      }
+    }
+
+    .circular-chart.green .circle {
+      stroke: #4cc790;
+    }
+
+    .percentage {
+      fill: #666;
+      font-family: sans-serif;
+      font-size: 0.5em;
+      text-anchor: middle;
+    }
+  }
+  .all-time-right-card {
+    border: 1px solid;
+    .upcoming-text-container {
+      border: 1px solid;
+      min-height: 200px;
+      > div {
+        border: 1px solid;
+        min-height: 100px;
+      }
+    }
+  }
+}
